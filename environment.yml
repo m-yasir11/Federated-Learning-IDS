@@ -1,0 +1,26 @@
+name: fl_ids_dp
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core
+  - python=3.10
+  - pip
+
+  # Scientific stack
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - tqdm
+
+  # Pip-installed packages (CPU-safe)
+  - pip:
+      - flwr>=1.6.0
+      - torch
+      - torchvision
+      - torchaudio
+      - opacus>=1.4.0
+
